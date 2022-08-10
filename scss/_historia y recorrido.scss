@@ -1,0 +1,119 @@
+header img {
+    @extend %ancho;
+}
+
+.viaJero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "img parr";
+
+}
+
+.coMent {
+    margin-top: 2rem;
+}
+
+.pSize2 {
+    background-color: $carusellColor;
+    color: $white;
+    width: 100%;
+    grid-area: parr;
+    padding-left: 0.1rem;
+    font-size: $fontWidhts;
+    height: 100%;
+}
+
+
+.imgvia {
+    width: 100%;
+    grid-area: img;
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+
+    nav {
+        img {
+            margin-left: 2rem;
+            padding-left: 1rem;
+        }
+
+        ul {
+
+            li {
+                margin: 1rem;
+            }
+        }
+    }
+
+
+
+    h1 {
+        text-align: center;
+    }
+
+
+
+    footer {
+        display: flex;
+        width: 100%;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1.5rem;
+        }
+
+        section {
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+
+    .imagineSize {
+        width: 70%;
+    }
+
+    .footer Img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pieInde {
+        width: 5rem;
+    }
+
+    .boxBorder {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .buttonPos2 {
+        margin-left: 15rem;
+        width: 100%;
+    }
+
+    .fontNav {
+        font-size: $fontWidhnavbar2;
+        margin-right: 2rem;
+    }
+
+    .ImgSc {
+        width: 30%;
+    }
+
+    .pSize2 {
+        text-align: center;
+    }
+
+    .viaJero {
+        height: 50%;
+    }
+}

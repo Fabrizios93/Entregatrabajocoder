@@ -1,0 +1,21 @@
+.mainSice{
+    @include flex (flex,column,space-between)
+}
+
+form{
+    border: double 2px $black;
+	box-sizing: border-box;
+	text-align:left;
+	background-color: $black;
+    margin-block-end:0
+}
+
+.formSize{
+    @include flex (flex,column,space-between)
+
+}
+
+#buttonPos3{
+        margin-top: 1rem;
+        margin-left: 14rem;
+}

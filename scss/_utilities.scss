@@ -1,0 +1,21 @@
+@mixin flex ($display, $direction, $content){
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $content;
+}
+    
+
+%ancho{
+    width: 100%;
+}
+
+@mixin hover ($width, $height, ){
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $content;
+}
+
+%fontFamily{
+    font-family: 'Dancing';
+    font-style: italic;
+}

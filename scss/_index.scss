@@ -1,0 +1,141 @@
+nav {
+    background-color: $colorCarr;
+    width: 100%;
+
+    ul {
+        @include flex (flex, column, space-between);
+        list-style: none;
+        text-decoration: none;
+        margin-left: 12rem;
+
+        li {
+            list-style-type: none;
+            width: 100%;
+            text-align: right;
+
+            a {
+                text-decoration: none;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: $white;
+                font-size: $fontWidhnavbar;
+                position: relative;
+                transition: 0.5s;
+                background: $colorCarr2 ;
+
+                &:hover {
+                    color: $placa;
+                }
+
+                span {
+                    &:hover .border-top {
+                        transform: scaleX(1)
+                    }
+
+                    &:hover .border-bottom {
+                        transform: scaleX(1)
+                    }
+
+                    &:hover .border-right {
+                        transition-delay: var(--transition-delay);
+                    }
+
+                    &:hover .border-bottom {
+                        transition-delay: calc(var(--transition-delay) * 2);
+                    }
+
+                    &:hover .border-left {
+                        transition-delay: calc(var(--transition-delay) * 3);
+                    }
+                }
+            }
+        }
+    }
+}
+
+h1,
+h2,
+p {
+    @extend %fontFamily
+}
+
+#buttonPos {
+    margin-left: 9rem;
+    margin-bottom: 3rem;
+    color: #fff;
+    background-color: $placa;
+    border-color: $colorCarr2;
+}
+
+footer section {
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 800px) {
+
+    nav {
+        img {
+            margin-left: 2rem;
+            padding-left: 1rem;
+        }
+
+        ul {
+
+            li {
+                margin: 1rem;
+            }
+        }
+    }
+
+
+
+    footer {
+        display: flex;
+        width: 100%;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1.5rem;
+        }
+
+        section {
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+
+    .imagineSize {
+        width: 70%;
+    }
+
+    .footer Img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pieInde {
+        width: 5rem;
+    }
+
+    .boxBorder {
+        margin-top: 15rem;
+    }
+
+    .buttonPos2 {
+        margin-left: 15rem;
+        width: 100%;
+    }
+
+    .fontNav {
+        font-size: $fontWidhnavbar2;
+        margin-right: 2rem;
+    }
+
+    .ImgSc {
+        width: 30%;
+    }
+
+}
